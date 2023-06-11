@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <% if (typeof(username) != "undefined") { %>
+        <h2>Logged in as <%= username %></h2>
+        <form action="/auth/logout" method="get">
+            <button type="submit">Logout</button>
+        </form>
+    <% } else { %>
+        <form action="/auth/login" method="get">
+            <button type="submit">Login</button>
+        </form>
+        <form action="/auth/register" method="get">
+            <button type="submit">Register</button>
+        </form>
+    <% } %>
+</body>
+</html>
