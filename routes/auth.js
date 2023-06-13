@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const User = require('../models/user');
+const path = require('path');
 
 router.get('/login', (req, res) => {
   res.render('index');
@@ -30,7 +31,7 @@ router.post('/register', (req, res) => {
 router.get('/logout', (req, res) => {
   req.logout();
   req.flash('success_msg', 'You are logged out');
-  res.redirect('/auth/login');
+  res.redirect('/'); // Redirect to the root URL
 });
 
 module.exports = router;
