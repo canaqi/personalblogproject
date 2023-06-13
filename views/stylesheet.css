@@ -1,0 +1,60 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #28a745;
+    color: #ffffff;
+    height: 80px; /* Adjust the height as desired */
+}
+
+.navbar .navbar-brand {
+    font-size: 24px; /* Adjust the font size as desired */
+    padding: 10px;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 28px; /* Adjust the font size as desired */
+    padding: 20px 10px; /* Adjust the padding as desired */
+}
+
+.container {
+    padding-top: 40px; /* Adjust the padding as desired */
+    padding-bottom: 40px; /* Adjust the padding as desired */
+}
+
+h1 {
+    font-size: 36px; /* Adjust the font size as desired */
+    margin-bottom: 20px; /* Adjust the margin as desired */
+}
+
+h2 {
+    font-size: 24px; /* Adjust the font size as desired */
+    margin-bottom: 20px; /* Adjust the margin as desired */
+}
+
+.blog-container {
+    margin-bottom: 60px; /* Adjust the margin as desired */
+}
+
+.blog-title {
+    font-size: 300px; /* Adjust the font size as desired */
+    margin-bottom: 200px; /* Adjust the margin as desired */
+}
+
+.blog-icons i {
+    font-size: 400px; /* Adjust the font size as desired */
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 20px; /* Adjust the margin as desired */
+}
+
+hr {
+    margin: 40px 0; /* Adjust the margin as desired */
+}
