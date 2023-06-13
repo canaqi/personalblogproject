@@ -2,16 +2,53 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e9ebee;
+            font-size: 18px;
+        }
+        .card {
+            width: 600px;
+            border-color: #8bc397;
+        }
+        .card-header,
+        .btn {
+            background-color: #3b9874;
+            color: white;
+        }
+        .success-msg {
+            color: #00a400;
+        }
+    </style>
 </head>
 <body>
-    <h1>Register</h1>
-    <form action="/auth/register" method="post">
-        <input type="text" name="name" placeholder="Name" required><br>
-        <input type="text" name="username" placeholder="Username" required><br>
-        <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <input type="password" name="password2" placeholder="Confirm Password" required><br>
-        <button type="submit">Register</button>
-    </form>
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>Register</h1>
+            </div>
+            <div class="card-body">
+                <form action="/auth/register" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password2" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-block">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
